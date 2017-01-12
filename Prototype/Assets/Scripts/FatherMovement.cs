@@ -69,9 +69,9 @@ public class FatherMovement : MonoBehaviour {
 
         if (itemCollision == true)
         {
-            if (other.gameObject.tag == "Deadly Floor")
+            if (other.gameObject.tag == "HelpDad")
             {
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.RightShift))
                 {
                     if (deleteFloor.gameObject == null)
                     {
