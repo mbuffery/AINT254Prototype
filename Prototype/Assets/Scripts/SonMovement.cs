@@ -8,8 +8,12 @@ public class SonMovement : MonoBehaviour {
     public float rotationSpeed;
     public float speed = 60;
     private bool itemCollision;
+    [SerializeField]
     public LinkDeleteScript secret1;
+    [SerializeField]
     public Level2 secret2;
+    [SerializeField]
+    public ThirdLevel secret3;
 
 
 
@@ -117,6 +121,24 @@ public class SonMovement : MonoBehaviour {
                         Destroy(secret2.gameObject);
 
                     }
+                    Destroy(other.gameObject);
+                }
+
+            }
+            if (other.gameObject.tag == "HelpSon")
+            {
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    if (secret3.gameObject == null)
+                    {
+
+                    }
+                    else
+                    {
+                        Destroy(secret3.gameObject);
+
+                    }
+
                     Destroy(other.gameObject);
                 }
 

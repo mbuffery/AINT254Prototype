@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\LinkDeleteScript.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\SonMovement.cs" />
+    <Compile Include="Assets\Scripts\ThirdLevel.cs" />
     <Compile Include="Assets\Scripts\TimeScript.cs" />
   </ItemGroup>
   <ItemGroup>
